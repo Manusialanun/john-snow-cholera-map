@@ -26,7 +26,7 @@ Explore the classic cholera map that revolutionized epidemiology and public heal
 @st.cache_data
 def load_data():
     # Use relative path for deployment
-    shapefile_path = r"Data"
+    shapefile_path = r"Data/cholera-deaths"
     
     try:
         deaths_gdf = gpd.read_file(shapefile_path, layer='Cholera_Deaths')
